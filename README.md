@@ -1,25 +1,27 @@
-常用前端校验正则
-==
-手机号码前端校验正则
---
+### 常用前端校验正则
+* 手机号码前端校验正则
+```js
 function isValidMobile(phoneNum){
     return /^\d{11}$/.test(phoneNum);
 }
-<br> 
-邮箱前端校验正则
---
+```
+
+* 邮箱前端校验正则
+```js
 function isValidEmail(email){
     return /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(email);
 }
-<br> 
-邮编前端校验正则
---
+```
+
+* 邮编前端校验正则
+```js
 function isValidPostCode(postCode){
     return /^[1-9][0-9]{5}$/.test(postCode);
 }
-<br> 
-身份证前端校验正则
---
+```
+
+* 身份证前端校验正则
+```js
 function isValidID(num){
     num = num.toUpperCase();
     if (!(/(^\d{15}$)|(^\d{17}([0-9]|X)$)/.test(num))) {
@@ -79,9 +81,10 @@ function isValidID(num){
     }
     return false;
 }
-<br> 
-银行卡号前端正则校验
---
+```
+
+* 银行卡号前端正则校验
+```js
 function isValidBankNum(bankno) {
     var lastNum = bankno.substr(bankno.length - 1, 1); //取出最后一位（与luhn进行比较）
     var first15Num = bankno.substr(0, bankno.length - 1); //前15或18位
@@ -137,3 +140,5 @@ function isValidBankNum(bankno) {
         return false;
     }
 }
+```
+
