@@ -5,16 +5,19 @@
 function isValidMobile(phoneNum){
     return /^\d{11}$/.test(phoneNum);
 }
+<br> 
 邮箱前端校验正则
 --
 function isValidEmail(email){
     return /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(email);
 }
+<br> 
 邮编前端校验正则
 --
 function isValidPostCode(postCode){
     return /^[1-9][0-9]{5}$/.test(postCode);
 }
+<br> 
 身份证前端校验正则
 --
 function isValidID(num){
@@ -76,6 +79,7 @@ function isValidID(num){
     }
     return false;
 }
+<br> 
 银行卡号前端正则校验
 --
 function isValidBankNum(bankno) {
