@@ -1,4 +1,5 @@
 常用前端校验正则
+==
 手机号码前端校验正则
 function isValidMobile(phoneNum){
     return /^\d{11}$/.test(phoneNum);
